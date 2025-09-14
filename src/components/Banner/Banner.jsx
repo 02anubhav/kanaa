@@ -1,19 +1,10 @@
-// Banner.jsx
 import React from "react";
 
 function Banner({ children }) {
   return (
-    <div className="bg-green-900 text-white flex flex-col sm:flex-row sm:items-center sm:justify-between px-4 py-3 gap-2 sm:gap-0 text-center sm:text-left">
+    <div className="bg-green-900 text-white flex flex-col sm:flex-row items-center justify-center px-4 py-3 gap-2 text-center">
       {children}
     </div>
-  );
-}
-
-function Arrow({ direction = "left" }) {
-  return (
-    <button className="text-white px-2 hover:text-gray-300 hidden sm:block">
-      {direction === "left" ? "‹" : "›"}
-    </button>
   );
 }
 
@@ -23,16 +14,12 @@ function Text({ children }) {
 
 function Link({ children, href }) {
   return (
-    <a
-      href={href}
-      className="underline ml-1 hover:text-gray-300 block sm:inline"
-    >
+    <a href={href} className="underline ml-1 hover:text-gray-300">
       {children}
     </a>
   );
 }
 
-Banner.Arrow = Arrow;
 Banner.Text = Text;
 Banner.Link = Link;
 

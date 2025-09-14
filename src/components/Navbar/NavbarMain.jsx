@@ -37,9 +37,9 @@ export default function App() {
       )}
 
       <Navbar.Actions>
-        <Navbar.Item>EN</Navbar.Item>
+        
         <Navbar.Item>
-          <User size={12} /> Sign In
+          <User size={12} /> Demo
         </Navbar.Item>
         <Navbar.Item
           onClick={() => navigate("/cart")}

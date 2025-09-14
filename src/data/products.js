@@ -7,7 +7,8 @@ const products = [
     category: "Electronics",
     description:
       "65-inch Sony BRAVIA smart TV with 4K Processor X1, Dolby Atmos, PS Remote Play support.",
-    image: "https://placehold.co/600x400?text=Sony+Bravia+65",
+    image:
+      "https://m.media-amazon.com/images/I/815JlBJENqL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.9,
     reviews: 266,
     quantity: 8,
@@ -24,7 +25,8 @@ const products = [
     salePrice: 89.99,
     category: "Electronics",
     description: "Classic film camera with metal body and vintage charm.",
-    image: "https://placehold.co/600x400?text=Camera",
+    image:
+      "https://m.media-amazon.com/images/I/714hINuPoBL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.7,
     reviews: 128,
     quantity: 2,
@@ -41,7 +43,8 @@ const products = [
     salePrice: 24.5,
     category: "Stationery",
     description: "Handmade leather journal for notes and sketches.",
-    image: "https://placehold.co/600x400?text=Journal",
+    image:
+      "https://m.media-amazon.com/images/I/81yF61k1PJL._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.3,
     reviews: 64,
     quantity: 6,
@@ -55,7 +58,8 @@ const products = [
     salePrice: 39,
     category: "Home",
     description: "Minimal, warm LED desk lamp with adjustable arm.",
-    image: "https://placehold.co/600x400?text=Lamp",
+    image:
+      "https://m.media-amazon.com/images/I/516dIgu0ZbL._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.5,
     reviews: 89,
     quantity: 12,
@@ -69,7 +73,8 @@ const products = [
     salePrice: 15,
     category: "Home & Kitchen",
     description: "Hand-glazed ceramic coffee mug (12oz).",
-    image: "https://placehold.co/600x400?text=Mug",
+    image:
+      "https://m.media-amazon.com/images/I/61MnQIPU9KL._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.2,
     reviews: 47,
     quantity: 4,
@@ -83,7 +88,8 @@ const products = [
     salePrice: 59.99,
     category: "Electronics",
     description: "Portable Bluetooth speaker with 10h battery life.",
-    image: "https://placehold.co/600x400?text=Speaker",
+    image:
+      "https://m.media-amazon.com/images/I/71XPqtugdsL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.8,
     reviews: 201,
     quantity: 3,
@@ -100,7 +106,8 @@ const products = [
     salePrice: 79.99,
     category: "Electronics",
     description: "Surround sound gaming headset with noise-cancelling mic.",
-    image: "https://placehold.co/600x400?text=Headset",
+    image:
+      "https://m.media-amazon.com/images/I/71nUYWaf0RL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.6,
     reviews: 156,
     quantity: 4,
@@ -114,7 +121,8 @@ const products = [
     salePrice: 12.99,
     category: "Accessories",
     description: "Adjustable desk stand for smartphones and small tablets.",
-    image: "https://placehold.co/600x400?text=Stand",
+    image:
+      "https://m.media-amazon.com/images/I/61cHbjMo7IL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.4,
     reviews: 73,
     quantity: 8,
@@ -128,7 +136,8 @@ const products = [
     salePrice: 29.99,
     category: "Accessories",
     description: "Ergonomic wireless mouse with 2.4GHz USB receiver.",
-    image: "https://placehold.co/600x400?text=Mouse",
+    image:
+      "https://m.media-amazon.com/images/I/61OkuiCWbDL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.6,
     reviews: 99,
     quantity: 7,
@@ -145,7 +154,8 @@ const products = [
     salePrice: 149,
     category: "Electronics",
     description: "True wireless earbuds with active noise cancellation.",
-    image: "https://placehold.co/600x400?text=Earbuds",
+    image:
+      "https://m.media-amazon.com/images/I/71HYKqwpP8L._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.8,
     reviews: 312,
     quantity: 6,
@@ -159,7 +169,8 @@ const products = [
     salePrice: 249,
     category: "Electronics",
     description: "Compact waterproof action camera with 4K recording.",
-    image: "https://placehold.co/600x400?text=Action+Camera",
+    image:
+      "https://m.media-amazon.com/images/I/81xY2jkFA2L._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.7,
     reviews: 174,
     quantity: 9,
@@ -176,7 +187,8 @@ const products = [
     salePrice: 99,
     category: "Accessories",
     description: "RGB backlit mechanical keyboard with blue switches.",
-    image: "https://placehold.co/600x400?text=Keyboard",
+    image:
+      "https://m.media-amazon.com/images/I/61MC8BK0w0L._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.5,
     reviews: 142,
     quantity: 11,
@@ -190,7 +202,8 @@ const products = [
     salePrice: 69,
     category: "Wearables",
     description: "Smart fitness tracker with heart rate and sleep monitor.",
-    image: "https://placehold.co/600x400?text=Fitness+Tracker",
+    image:
+      "https://m.media-amazon.com/images/I/61Fe+1-71-L._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.4,
     reviews: 189,
     quantity: 2,
@@ -207,7 +220,8 @@ const products = [
     salePrice: 199,
     category: "Electronics",
     description: "Mini portable projector with 1080p support.",
-    image: "https://placehold.co/600x400?text=Projector",
+    image:
+      "https://m.media-amazon.com/images/I/51hLdwOfI8L._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.6,
     reviews: 153,
     quantity: 5,
@@ -221,7 +235,8 @@ const products = [
     salePrice: 179,
     category: "Wearables",
     description: "Touchscreen smartwatch with GPS and health tracking.",
-    image: "https://placehold.co/600x400?text=Smartwatch",
+    image:
+      "https://m.media-amazon.com/images/I/61IZGlU2YIL._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.7,
     reviews: 221,
     quantity: 2,
@@ -235,7 +250,8 @@ const products = [
     salePrice: 349,
     category: "Electronics",
     description: "Foldable drone with 4K camera and GPS positioning.",
-    image: "https://placehold.co/600x400?text=Drone",
+    image:
+      "https://m.media-amazon.com/images/I/61a4nYBnCsL._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.6,
     reviews: 275,
     quantity: 12,
@@ -252,7 +268,8 @@ const products = [
     salePrice: 39,
     category: "Home & Kitchen",
     description: "Stainless steel electric kettle (1.7L).",
-    image: "https://placehold.co/600x400?text=Kettle",
+    image:
+      "https://m.media-amazon.com/images/I/613RHj7fW+L._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.3,
     reviews: 102,
     quantity: 10,
@@ -266,7 +283,8 @@ const products = [
     salePrice: 22,
     category: "Smart Home",
     description: "WiFi-enabled smart plug with voice assistant support.",
-    image: "https://placehold.co/600x400?text=Smart+Plug",
+    image:
+      "https://m.media-amazon.com/images/I/61mwZi5guiL._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.4,
     reviews: 85,
     quantity: 4,
@@ -280,7 +298,8 @@ const products = [
     salePrice: 55,
     category: "Accessories",
     description: "Water-resistant backpack for laptops up to 15.6 inches.",
-    image: "https://placehold.co/600x400?text=Backpack",
+    image:
+      "https://m.media-amazon.com/images/I/810gZYpPz9L._AC_UY327_FMwebp_QL65_.jpg",
     rating: 4.5,
     reviews: 131,
     quantity: 6,
@@ -297,7 +316,8 @@ const products = [
     salePrice: 49,
     category: "Personal Care",
     description: "Rechargeable electric toothbrush with 3 cleaning modes.",
-    image: "https://placehold.co/600x400?text=Toothbrush",
+    image:
+      "https://m.media-amazon.com/images/I/71sZ7M1OHwL._AC_UL480_FMwebp_QL65_.jpg",
     rating: 4.6,
     reviews: 147,
     quantity: 7,

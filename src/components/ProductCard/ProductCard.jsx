@@ -13,10 +13,11 @@ function Image({ src, alt }) {
     <img
       src={src}
       alt={alt}
-      className="rounded-md w-full h-36 sm:h-40 object-cover"
+      className="w-full h-30 rounded-md object-contain"
     />
   );
 }
+
 
 function Rating({ rating, reviews }) {
   return (
@@ -68,7 +69,7 @@ function Button({ children, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="mt-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium"
+      className="mt-2 w-full bg-gradient-to-b from-indigo-500 to to-indigo-700 hover:bg-indigo-700 text-white py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium cursor-pointer"
     >
       {children}
     </button>

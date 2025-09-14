@@ -9,7 +9,6 @@ function ProductDetails({ children }) {
   );
 }
 
-/* ------------------ IMAGE CAROUSEL ------------------ */
 function ImageCarousel({ images }) {
   const [current, setCurrent] = useState(0);
 
@@ -41,7 +40,6 @@ function ImageCarousel({ images }) {
         </button>
       </div>
 
-      {/* Thumbnails */}
       <div className="flex gap-3 mt-4">
         {images.map((img, i) => (
           <img
@@ -59,7 +57,6 @@ function ImageCarousel({ images }) {
   );
 }
 
-/* ------------------ INFO ------------------ */
 function Info({ children }) {
   return <div className="md:col-span-4 space-y-4">{children}</div>;
 }
@@ -131,7 +128,6 @@ function CartActions() {
   );
 }
 
-/* ------------------ EXTRA INFO ------------------ */
 function Extra({ children }) {
   return <div className="md:col-span-3 space-y-4">{children}</div>;
 }
@@ -140,7 +136,6 @@ function Box({ children }) {
   return <div className=" p-4 border">{children}</div>;
 }
 
-/* ------------------ COMPOUND EXPORT ------------------ */
 ProductDetails.ImageCarousel = ImageCarousel;
 ProductDetails.Info = Info;
 ProductDetails.Title = Title;

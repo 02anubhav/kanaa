@@ -4,17 +4,25 @@ import { useNavigate } from "react-router-dom";
 import { Cart } from "../components/Cart/Cart";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
+import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function CartPage() {
   const { items, updateQty, removeItem, clear, totalPrice } = useCart();
+  const [isToastActive, setIsToastActive] = useState(false);
   const navigate = useNavigate();
 
   const payNow = () => {
-    toast.success(" Payment Successful!", {
+    if (isToastActive) return;
+
+    setIsToastActive(true);
+
+    toast.success("Payment Successful!", {
       position: "top-center",
       autoClose: 2000,
+      onClose: () => setIsToastActive(false),
     });
+
     setTimeout(() => {
       clear();
       navigate("/");
@@ -42,25 +50,24 @@ export default function CartPage() {
               title={it.title}
               price={`SAR ${it.price.toFixed(2)}`}
             >
-              <span className="flex items-center mt-2 border rounded-lg w-max">
+              <span className="flex items-center mt-2 border rounded-lg w-max border-neutral-300">
                 <button
                   onClick={() => updateQty(it.id, Math.max(1, it.qty - 1))}
-                  className="px-3 py-2 hover:bg-gray-100"
+                  className="px-3 py-2 hover:bg-gray-100 hover:rounded-l-lg cursor-pointer"
                 >
                   <Minus size={16} />
                 </button>
                 <span className="px-4">{it.qty}</span>
                 <button
                   onClick={() => updateQty(it.id, it.qty + 1)}
-                  className="px-3 py-2 hover:bg-gray-100"
+                  className="px-3 py-2 hover:bg-gray-100 hover:rounded-r-lg cursor-pointer"
                 >
                   <Plus size={16} />
                 </button>
               </span>
-              {/* Remove */}
               <button
                 onClick={() => removeItem(it.id)}
-                className="mt-2 flex items-center gap-1 text-red-500 hover:text-red-700 text-sm"
+                className="mt-2 flex items-center gap-1 text-red-500 hover:text-red-700 text-sm cursor-pointer"
               >
                 <Trash2 size={16} /> Remove
               </button>
@@ -81,8 +88,6 @@ export default function CartPage() {
           <Cart.Checkout onClick={payNow} />
         </Cart.Summary>
       </Cart>
-
-      {/* Toast Container */}
       <ToastContainer />
     </>
   );
