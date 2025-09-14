@@ -18,7 +18,6 @@ function Image({ src, alt }) {
   );
 }
 
-
 function Rating({ rating, reviews }) {
   return (
     <div className="flex items-center gap-1 text-xs sm:text-sm">
@@ -45,9 +44,15 @@ function Badge({ children, color = "bg-gray-200 text-gray-800" }) {
 
 function Title({ children }) {
   return (
-    <h3 className="text-xs sm:text-sm font-medium leading-tight line-clamp-2 h-8 sm:h-10">
+    <h3 className="text-xs sm:text-sm font-medium leading-tight line-clamp-2 ">
       {children}
     </h3>
+  );
+}
+
+function Category({ children }) {
+  return (
+    <p className="text-[11px] sm:text-xs text-gray-500 ">{children}</p>
   );
 }
 
@@ -69,18 +74,24 @@ function Button({ children, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="mt-2 w-full bg-gradient-to-b from-indigo-500 to to-indigo-700 hover:bg-indigo-700 text-white py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium cursor-pointer"
+      className="mt-2 w-full bg-gradient-to-b from-indigo-500 to-indigo-700 hover:bg-indigo-700 text-white py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium cursor-pointer"
     >
       {children}
     </button>
   );
 }
 
+function Divider() {
+  return <hr className="my-1 border-t border-neutral-200" />;
+}
+
+ProductCard.Divider = Divider;
 ProductCard.Image = Image;
 ProductCard.Rating = Rating;
 ProductCard.Badges = Badges;
 ProductCard.Badge = Badge;
 ProductCard.Title = Title;
+ProductCard.Category = Category; // NEW
 ProductCard.Price = Price;
 ProductCard.Delivery = Delivery;
 ProductCard.Button = Button;

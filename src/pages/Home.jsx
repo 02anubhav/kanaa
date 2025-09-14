@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useSearch } from "../context/SearchContext";
 
 export default function Home() {
-  const { query } = useSearch(); 
+  const { query } = useSearch();
 
   const filteredProducts = products.filter((p) =>
     p.title.toLowerCase().includes(query.toLowerCase())
@@ -38,6 +38,10 @@ export default function Home() {
               )}
 
               <ProductCard.Title>{p.title}</ProductCard.Title>
+
+              <ProductCard.Divider />
+
+              <ProductCard.Category>{p.category}</ProductCard.Category>
 
               <ProductCard.Price>﷼ {p.price}</ProductCard.Price>
 
