@@ -1,3 +1,86 @@
+export const sampleReviews = [
+  {
+    name: "Allen",
+    rating: 4,
+    comment:
+      "As a plush toy enthusiast, I can’t get enough of Squishmallows! Their softness is unmatched and they make the perfect cuddle buddy.",
+    date: "2024-04-11",
+    helpful: 2,
+  },
+  {
+    name: "Madiha",
+    rating: 5,
+    comment:
+      "My daughter loves her Squishmallow! It's so soft and cuddly, she takes it everywhere with her. Would definitely recommend.",
+    date: "2024-04-11",
+    helpful: 1,
+  },
+  {
+    name: "Mohammed",
+    rating: 2,
+    comment:
+      "I was disappointed. It’s soft and cute, but after a few weeks of light use, the seams started coming apart and the stuffing shifted.",
+    date: "2024-04-12",
+    helpful: 0,
+  },
+  {
+    name: "Priya",
+    rating: 5,
+    comment:
+      "Absolutely love this! Super soft, lightweight, and perfect as a gift. My kids fight over it every night!",
+    date: "2024-04-15",
+    helpful: 4,
+  },
+  {
+    name: "Rahul",
+    rating: 3,
+    comment:
+      "It’s okay, not as big as I expected. Soft, but the price feels a bit high for the size.",
+    date: "2024-04-18",
+    helpful: 1,
+  },
+  {
+    name: "Sofia",
+    rating: 5,
+    comment:
+      "One of the best purchases I’ve made! Perfectly huggable, and I even use it as a pillow sometimes.",
+    date: "2024-04-20",
+    helpful: 3,
+  },
+  {
+    name: "Arjun",
+    rating: 4,
+    comment:
+      "Good quality overall, but mine arrived a little smaller than shown in the pictures. Still happy with it.",
+    date: "2024-04-22",
+    helpful: 1,
+  },
+  {
+    name: "Emily",
+    rating: 5,
+    comment:
+      "I bought this as a gift and the person absolutely loved it! The softness and cuteness are unbeatable.",
+    date: "2024-04-25",
+    helpful: 2,
+  },
+  {
+    name: "Karan",
+    rating: 3,
+    comment:
+      "It’s fine, but not as durable as I hoped. After a month, the fabric started to pill a little.",
+    date: "2024-04-28",
+    helpful: 0,
+  },
+  {
+    name: "Nisha",
+    rating: 5,
+    comment:
+      "So adorable! Makes me smile every time I see it. Great stitching and really comfy to hold.",
+    date: "2024-05-01",
+    helpful: 5,
+  },
+];
+
 const products = [
   {
     id: "p1",

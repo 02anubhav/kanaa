@@ -10,6 +10,7 @@ import { useState } from "react";
 import ProductDescription from "../components/ProductDescription";
 import ProductsGrid from "../components/ProductsGrid";
 import ProductGeneralSpecs from "../components/ProductGeneralSpecs";
+import ReviewsSection from "../components/Reviews";
 
 
 export default function ProductDetail() {
@@ -184,6 +185,7 @@ export default function ProductDetail() {
       </div>
       <ProductDescription />
       <ProductGeneralSpecs />
+      <ReviewsSection/>
       <ProductsGrid />
       <ToastContainer />
     </div>
