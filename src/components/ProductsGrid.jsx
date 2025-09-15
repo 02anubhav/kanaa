@@ -63,6 +63,7 @@ export default function ProductsGrid({ showOnlyBestSellers = true }) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <h2 className="mb-4 font-bold text-lg">Best Sellers</h2>
       <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory sm:hidden">
         {list.map((product) => (
           <div key={product.id} className="flex-shrink-0 w-56 snap-start">
