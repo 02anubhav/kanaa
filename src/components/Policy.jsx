@@ -36,7 +36,6 @@ export default function Features() {
   return (
     <div className="bg-orange-50">
       <div className="max-w-6xl mx-auto px-6 py-12">
-        {/* Desktop Grid */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
             <div
@@ -54,17 +53,17 @@ export default function Features() {
           ))}
         </div>
 
-        <div className="md:hidden flex gap-6 overflow-x-auto scrollbar-hide">
+        <div className="md:hidden flex gap-4 overflow-x-auto scrollbar-hide">
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="min-w-[250px] flex-shrink-0 flex flex-col items-center text-center p-6  rounded-lg "
+              className="w-3/4 flex-shrink-0 flex flex-col items-center text-center  rounded-lg "
             >
               <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-400 text-sm tracking-tight">
+              <p className="text-gray-400 text-md tracking-tight max-w-[80%]">
                 {feature.description}
               </p>
             </div>
