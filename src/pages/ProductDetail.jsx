@@ -9,6 +9,8 @@ import useIsMobile from "../hooks/useIsMobile";
 import { useState } from "react";
 import ProductDescription from "../components/ProductDescription";
 import ProductsGrid from "../components/ProductsGrid";
+import ProductGeneralSpecs from "../components/ProductGeneralSpecs";
+
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -181,8 +183,8 @@ export default function ProductDetail() {
         </div>
       </div>
       <ProductDescription />
+      <ProductGeneralSpecs />
       <ProductsGrid />
-
       <ToastContainer />
     </div>
   );

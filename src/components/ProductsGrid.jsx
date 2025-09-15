@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useCart } from "../context/CartContext"; // adjust path if needed
 
 export default function ProductsGrid({ showOnlyBestSellers = true }) {
-  const { add } = useCart(); // expects add(product, qty)
+  const { add } = useCart();
   const [isToastActive, setIsToastActive] = useState(false);
 
   const list = (products || []).filter((p) => {
@@ -62,8 +62,8 @@ export default function ProductsGrid({ showOnlyBestSellers = true }) {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="mb-4 font-bold text-lg">Best Sellers</h2>
+    <div className="max-w-6xl mx-auto px-4 py-8 ">
+      <h1 className="text-2xl font-semibold">Best Sellers</h1>
       <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory sm:hidden">
         {list.map((product) => (
           <div key={product.id} className="flex-shrink-0 w-56 snap-start">
