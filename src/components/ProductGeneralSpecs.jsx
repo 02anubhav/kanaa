@@ -102,11 +102,11 @@ export default function ProductGeneralSpecs() {
             {ROWS.map((row, idx) => (
               <div
                 key={row.label}
-                className={`grid grid-cols-1 sm:grid-cols-12 gap-x-6 items-start py-4 px-6 ${
+                className={`grid grid-cols-2 sm:grid-cols-12 gap-x-6 items-start py-4 px-6 ${
                   idx % 2 === 0 ? "bg-white" : "bg-gray-50"
                 }`}
               >
-                <div className="sm:col-span-4 text-sm text-gray-700 font-medium">
+                <div className="sm:col-span-4 text-sm text-gray-700 font-medium ">
                   {row.label}
                 </div>
                 <div className="sm:col-span-8 text-sm text-gray-600 whitespace-pre-line">
