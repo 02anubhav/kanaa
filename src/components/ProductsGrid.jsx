@@ -62,9 +62,10 @@ export default function ProductsGrid({ showOnlyBestSellers = true }) {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 ">
-      <h1 className="text-2xl font-semibold">Best Sellers</h1>
-      <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory sm:hidden">
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <h1 className="text-2xl font-semibold mb-4">Best Sellers</h1>
+
+      <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory xl:hidden">
         {list.map((product) => (
           <div key={product.id} className="flex-shrink-0 w-56 snap-start">
             <BestSellerCard
@@ -75,7 +76,7 @@ export default function ProductsGrid({ showOnlyBestSellers = true }) {
         ))}
       </div>
 
-      <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="hidden xl:grid grid-cols-5 gap-6">
         {list.map((product) => (
           <BestSellerCard
             key={product.id}

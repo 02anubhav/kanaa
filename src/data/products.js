@@ -374,7 +374,7 @@ const products = [
   },
   {
     id: "p10",
-    title: "LG InstaView Door-in-Door Refrigerator",
+    title: "LG Door-in-Door Refrigerator",
     price: 8499,
     salePrice: 7899,
     category: "Appliances",
@@ -458,7 +458,7 @@ const products = [
   },
   {
     id: "p12",
-    title: "Keychron K6 Wireless Mechanical Keyboard",
+    title: "Keychron K6 Wireless Keyboard",
     price: 129,
     salePrice: 99,
     category: "Accessories",
@@ -532,7 +532,7 @@ const products = [
   },
   {
     id: "p14",
-    title: "Anker Nebula Capsule II Portable Projector",
+    title: "Anker Nebula Capsule II",
     price: 249,
     salePrice: 199,
     category: "Electronics",
@@ -568,7 +568,7 @@ const products = [
   },
   {
     id: "p15",
-    title: "Samsung Galaxy Watch 6",
+    title: "Samsung Galaxy Watch",
     price: 229,
     salePrice: 179,
     category: "Wearables",
