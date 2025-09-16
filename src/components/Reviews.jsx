@@ -169,7 +169,7 @@ export default function ReviewsSection({ product = {} }) {
   }, [isExpanded, visibleCount, selectedFilterStars, sortBy, reviews.length]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 border-b border-neutral-300">
+    <div className="w-full mx-auto px-4 py-8 border-b border-neutral-300">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-2xl font-semibold">Customer Reviews</h2>
         <button

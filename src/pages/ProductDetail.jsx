@@ -11,6 +11,7 @@ import ProductDescription from "../components/ProductDescription";
 import ProductsGrid from "../components/ProductsGrid";
 import ProductGeneralSpecs from "../components/ProductGeneralSpecs";
 import ReviewsSection from "../components/Reviews";
+import ProductsPage from "../components/Productspage"
 
 
 export default function ProductDetail() {
@@ -42,7 +43,7 @@ export default function ProductDetail() {
 
   if (!product) {
     return (
-      <div className="p-8 max-w-6xl mx-auto">
+      <div className="p-8 w-full mx-auto">
         <h2 className="text-2xl font-semibold mb-4">Product not found</h2>
         <Link to="/" className="text-blue-600">
           Back to home
@@ -69,7 +70,9 @@ export default function ProductDetail() {
           )}
         </BreadCrumbs>
       )}
-      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+      <ProductsPage/>
+      {/* <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="lg:col-span-5">
           <div className=" w-full border px-6 py-4 rounded-md border-neutral-300">
             <img
@@ -182,12 +185,12 @@ export default function ProductDetail() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       <ProductDescription />
       <ProductGeneralSpecs />
       <ReviewsSection/>
       <ProductsGrid />
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </div>
   );
 }

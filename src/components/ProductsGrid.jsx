@@ -62,7 +62,7 @@ export default function ProductsGrid({ showOnlyBestSellers = true }) {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="w-full mx-auto px-4 py-8">
       <h1 className="text-2xl font-semibold mb-4">Best Sellers</h1>
 
       <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory xl:hidden">

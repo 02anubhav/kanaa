@@ -35,7 +35,7 @@ const features = [
 export default function Features() {
   return (
     <div className="bg-orange-50">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="w-full mx-auto px-6 py-12">
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
             <div

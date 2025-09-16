@@ -22,7 +22,7 @@ export default function ProductDescription() {
     product.description.split(" ").slice(0, 40).join(" ") + "...";
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-10">
+    <section className="w-full mx-auto px-6 py-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         <div className="lg:col-span-8">
           <h2 className="text-lg font-semibold border-b pb-4 border-neutral-300 mb-4">

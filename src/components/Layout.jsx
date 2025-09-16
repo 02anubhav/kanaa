@@ -13,11 +13,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <BannerMain />
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full mx-auto">
         <NavbarMain />
       </div>
 
-      <div className="max-w-6xl mx-auto min-h-screen">{children}</div>
+      <div className="w-full mx-auto min-h-screen">{children}</div>
 
       {isProductDetail && <Policy />}
 

@@ -64,7 +64,7 @@ export default function ProductGeneralSpecs() {
   };
 
   return (
-    <main className="max-w-6xl mx-auto px-4  py-6 border-y border-neutral-300 ">
+    <main className="w-full mx-auto px-4  py-6 border-y border-neutral-300 ">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-2xl font-semibold">Specifications</h1>
         <button

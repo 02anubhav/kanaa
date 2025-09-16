@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Cart = ({ children }) => (
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 p-4 sm:p-6 ">
+  <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 p-4 sm:p-6 ">
     {children}
   </div>
 );
