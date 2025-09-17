@@ -18,7 +18,7 @@ export default function ProductDetail() {
   const handleAddToCart = () => {
     add(product, qty);
 
-    toast.dismiss(); 
+    toast.dismiss();
 
     toast.success(
       <div className="flex items-center gap-2">
@@ -33,14 +33,12 @@ export default function ProductDetail() {
 
   return (
     <div className="bg-white rounded-2xl p-3 space-y-3">
-      {/* Badge */}
       <div>
         <span className="bg-amber-500 text-white text-xs sm:text-sm font-medium px-3 py-1 rounded-r-full">
           ONLY {product.quantity} LEFT!
         </span>
       </div>
 
-      {/* Category + SKU row */}
       <div className="flex items-center gap-3">
         <a
           href="#"
@@ -52,17 +50,14 @@ export default function ProductDetail() {
         <span className="text-xs sm:text-sm text-gray-500">SKU-235346456</span>
       </div>
 
-      {/* Title */}
       <h1 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 leading-snug">
         {product.title}
       </h1>
 
-      {/* Deal pill */}
       <div className="w-full bg-amber-100 text-amber-800 text-xs sm:text-sm font-medium px-3 py-1 rounded">
         Best Deal
       </div>
 
-      {/* Price row */}
       <div className="flex items-baseline gap-2">
         <div className="text-lg sm:text-xl font-bold ">
           <span className="text-emerald-700"> AED</span> {product.salePrice}
@@ -75,7 +70,6 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Explore more */}
       <div className="border border-gray-100 rounded-xl px-3 py-2 flex items-center gap-2">
         <div className="w-7 h-7 rounded-full border border-green-100 flex items-center justify-center text-green-600 text-xs">
           ◎
@@ -88,7 +82,6 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Size */}
       <div className="flex items-center justify-between">
         <div className="text-xs sm:text-sm text-gray-700">
           Size: <span className="font-medium">12-inch</span>
@@ -98,7 +91,6 @@ export default function ProductDetail() {
         </a>
       </div>
 
-      {/* Size buttons */}
       <div className="flex flex-wrap gap-2">
         {sizes.map((s) => (
           <button
@@ -115,7 +107,6 @@ export default function ProductDetail() {
         ))}
       </div>
 
-      {/* Signup banner */}
       <div className="bg-teal-100 rounded-lg p-3 flex  justify-between items-center sm:items-center sm:justify-between gap-2">
         <div className=" flex flex-col sm:flex-row  items-center gap-2 text-xs sm:text-sm">
           <span className="font-medium">Signup and Get</span>
@@ -130,8 +121,7 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Coupons horizontal scroll */}
-      <div className="overflow-x-auto no-scrollbar pb-2 w-full ">
+      <div className="overflow-x-auto no-scrollbar pb-2 w-full">
         <div className="flex gap-2">
           <div className="flex-shrink-0 min-w-[350px]">
             <CouponCard code={product.category} />
@@ -142,7 +132,6 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Quantity + Add to Cart */}
       <div className="flex items-center gap-3">
         <div className="flex items-center space-x-2">
           <button
@@ -169,7 +158,6 @@ export default function ProductDetail() {
         </button>
       </div>
 
-      {/* bottom actions */}
       <div className="grid grid-cols-2 gap-2">
         <button className="py-2 rounded-lg  bg-gray-100 text-xs sm:text-sm">
           Price Alert

@@ -1,4 +1,3 @@
-// ProductCarousel.jsx
 import React, { useState, useRef, useEffect } from "react";
 
 export default function ProductCarousel({
@@ -57,7 +56,7 @@ export default function ProductCarousel({
   function onTouchEnd() {
     if (touchStartX.current == null || touchMoveX.current == null) return;
     const dx = touchMoveX.current - touchStartX.current;
-    const threshold = 40; // px to register swipe
+    const threshold = 40; 
     if (dx > threshold) prev();
     else if (dx < -threshold) next();
     touchStartX.current = null;
@@ -86,7 +85,6 @@ export default function ProductCarousel({
           if (touchStartX.current !== null) onTouchEnd();
         }}
       >
-        {/* left arrow */}
         <button
           aria-label="Previous image"
           onClick={prev}
@@ -107,7 +105,6 @@ export default function ProductCarousel({
           </svg>
         </button>
 
-        {/* right arrow */}
         <button
           aria-label="Next image"
           onClick={next}
@@ -128,7 +125,6 @@ export default function ProductCarousel({
           </svg>
         </button>
 
-        {/* images: absolute & scale to parent's height using object-contain */}
         {images.map((src, i) => (
           <img
             key={i}

@@ -52,9 +52,9 @@ export default function Home() {
                 />
               )}
 
-              <ProductCard.Button>
-                <Link to={`/product/${p.id}`}>View Details</Link>
-              </ProductCard.Button>
+              <Link to={`/product/${p.id}`}>
+                <ProductCard.Button>View Details</ProductCard.Button>
+              </Link>
             </ProductCard>
           ))}
         </div>
