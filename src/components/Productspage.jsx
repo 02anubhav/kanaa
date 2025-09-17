@@ -12,32 +12,17 @@ const IMAGES = [
 
 export default function ProductPage() {
   return (
-    <div className="w-full mx-auto px-4 lg:px-8 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-6 items-start">
+    <div className="w-full mx-auto px-4 lg:px-8 py-4 mt-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-4 items-start">
         <div className="md:col-span-1 xl:col-span-4">
-          <div className="bg-white rounded-2xl p-4">
-            <div className="aspect-[5/5]  rounded-lg overflow-hidden bg-gray-50">
+          <div className="bg-white rounded-2xl ">
+            <div className="aspect-[5/5]  rounded-lg overflow-hidden">
               <ProductCarousel images={IMAGES} />
-            </div>
-
-            <div className="mt-3 flex items-center gap-3 overflow-x-auto no-scrollbar">
-              {IMAGES.map((src, i) => (
-                <button
-                  key={i}
-                  className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-200"
-                >
-                  <img
-                    src={src}
-                    alt={`thumb-${i}`}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
-              ))}
             </div>
           </div>
         </div>
 
-        <div className="md:col-span-1 xl:col-span-5">
+        <div className="md:col-span-1 xl:col-span-5 ">
           <ProductDetails />
         </div>
 

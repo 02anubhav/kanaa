@@ -6,10 +6,12 @@ import { useCart } from "../context/CartContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useParams } from "react-router-dom";
+import useIsMobile from "../hooks/useIsMobile"
 
 export default function ProductDetail() {
   const [selectedSize, setSelectedSize] = useState('12"');
   const { add } = useCart();
+  const isMobile =useIsMobile()
   const [qty, setQty] = useState(1);
   const { id } = useParams();
   const product = products.find((p) => p.id === id);
@@ -32,7 +34,7 @@ export default function ProductDetail() {
   };
 
   return (
-    <div className="bg-white rounded-2xl p-3 space-y-3">
+    <div className=" rounded-2xl p-3  space-y-3 ">
       <div>
         <span className="bg-amber-500 text-white text-xs sm:text-sm font-medium px-3 py-1 rounded-r-full">
           ONLY {product.quantity} LEFT!
