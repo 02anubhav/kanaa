@@ -133,7 +133,7 @@ export default function ProductDetail() {
       {/* Coupons horizontal scroll */}
       <div className="overflow-x-auto no-scrollbar pb-2 w-full ">
         <div className="flex gap-2">
-          <div className="flex-shrink-0 min-w-[320px]">
+          <div className="flex-shrink-0 min-w-[350px]">
             <CouponCard code={product.category} />
           </div>
           <div className="flex-shrink-0 min-w-[320px] flex items-center p-3 border border-neutral-300 rounded-lg bg-white text-xs sm:text-sm">

@@ -298,7 +298,7 @@ const products = [
     title: "Dyson V15 Detect",
     price: 2999,
     salePrice: 2699,
-    category: "Home Appliances",
+    category: "Home",
     description:
       "The Dyson V15 Detect Absolute is the most powerful, intelligent cordless vacuum cleaner designed to make cleaning effortless and efficient. Featuring laser dust detection, it reveals microscopic dust on hard floors so nothing is left behind. Its advanced piezo sensor continuously measures dust particles and automatically adjusts suction power for optimal cleaning on any surface. Powered by a Hyperdymium motor that spins at up to 125,000 rpm, it delivers exceptional suction power for capturing dirt, debris, and pet hair. The V15 comes with a high-torque cleaner head, anti-tangle brush, and specialized attachments, making it ideal for homes with pets, carpets, and hard floors. With up to 60 minutes of fade-free runtime, you can clean your entire home in a single charge, while the LCD screen shows real-time performance, including dust size and battery life. The whole-machine filtration captures 99.99% of particles as small as 0.3 microns, ensuring cleaner air in your home. Designed with hygienic bin emptying, it eliminates the mess of traditional vacuums. Wall-mounted charging dock makes storage and charging convenient. Lightweight, cordless, and versatile, the Dyson V15 Detect Absolute is not just a vacuum—it’s a complete home-cleaning solution engineered for the modern lifestyle.",
     image:
@@ -376,7 +376,7 @@ const products = [
     title: "Instant Pot Duo Evo Plus",
     price: 699,
     salePrice: 599,
-    category: "Kitchen Appliances",
+    category: "Kitchen",
     description:
       "The Instant Pot Duo Evo Plus is the ultimate 10-in-1 multi-cooker designed to save time and elevate your cooking. With over 20 enhancements compared to previous models, it combines the functions of a pressure cooker, slow cooker, rice cooker, yogurt maker, sauté pan, steamer, food warmer, and more, into one sleek appliance. Its 1200W heating element reduces preheating time, while the EasySeal lid automatically seals when cooking begins, ensuring safety and convenience. Featuring 48 customizable presets, you can cook everything from soups and stews to cakes and yogurt at the touch of a button. The large, bright LCD display offers step-by-step cooking instructions and clear progress indicators. Its 304-grade stainless steel inner pot with Easy-Grip handles makes it safe to lift and transfer, and the pot is compatible with stovetop cooking. Designed with advanced safety mechanisms, including overheat protection and a safe-locking lid, it ensures worry-free operation. Dishwasher-safe parts make cleanup effortless. With a 6-quart capacity, the Instant Pot Duo Evo Plus is perfect for families or meal prepping. Whether you’re a busy professional, parent, or cooking enthusiast, this appliance transforms everyday meals into gourmet creations while saving you time in the kitchen.",
     image:
@@ -729,7 +729,7 @@ const products = [
     title: "Electric Kettle",
     price: 55,
     salePrice: 39,
-    category: "Home & Kitchen",
+    category: "Kitchen",
     description:
       "Upgrade your kitchen with this stainless steel electric kettle, boasting a 1.7-liter capacity perfect for everyday use. Its sleek design complements any modern kitchen while providing efficiency and convenience. The kettle heats water quickly and evenly, making it ideal for tea, coffee, instant noodles, and other hot beverages. Equipped with an automatic shut-off feature and boil-dry protection, it ensures safe operation every time. The ergonomic handle provides a comfortable grip, while the spout guarantees precise pouring without spills. Its stainless steel construction ensures durability and long-lasting performance. Lightweight and compact, it is easy to store when not in use, and the cordless design allows hassle-free mobility. The kettle also features energy-efficient technology to reduce electricity consumption without compromising performance. Ideal for busy mornings, home offices, and small gatherings, it ensures you always have hot water ready in minutes. Delivery is scheduled for Wed, Sep 17, and its “tabby” badge reflects reliability and quality. With a rating of 4.3 from 102 reviews and 10 units in stock, this electric kettle is a practical, stylish, and safe choice for any household.",
     image:
