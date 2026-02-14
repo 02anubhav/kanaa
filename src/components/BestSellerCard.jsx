@@ -14,9 +14,9 @@ export default function BestSellerCard({ product, onAddToCart = () => {} }) {
     badges = [],
   } = product;
 
-  const isBestSeller = badges.some(
-    (b) => String(b.label).toLowerCase() === "best seller"
-  );
+  // const isBestSeller = badges.some(
+  //   (b) => String(b.label).toLowerCase() === "best seller"
+  // );
 
   const discountPercent =
     price && salePrice ? Math.round(((price - salePrice) / price) * 100) : 0;
