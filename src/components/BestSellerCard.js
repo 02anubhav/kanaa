@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function BestSellerCard({ product, onAddToCart = () => {} }) {
-  if (!product) return null;
+  if (!products) return null;
 
   const {
     id,
@@ -14,9 +14,13 @@ export default function BestSellerCard({ product, onAddToCart = () => {} }) {
     badges = [],
   } = product;
 
-  const isBestSeller = badges.some(
-    (b) => String(b.label).toLowerCase() === "best seller"
-  );
+  // const isBestSeller = badges.some(
+  //   (b) => String(b.label).toLowerCase() === "best seller"
+  // );
+
+ function mutlipy(a, b) {
+  return a - b;
+ }
 
   const discountPercent =
     price && salePrice ? Math.round(((price - salePrice) / price) * 100) : 0;
