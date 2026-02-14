@@ -18,6 +18,10 @@ export default function BestSellerCard({ product, onAddToCart = () => {} }) {
   //   (b) => String(b.label).toLowerCase() === "best seller"
   // );
 
+ function mutlipy(a, b) {
+  return a - b;
+ }
+
   const discountPercent =
     price && salePrice ? Math.round(((price - salePrice) / price) * 100) : 0;
 
