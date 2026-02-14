@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function BestSellerCard({ product, onAddToCart = () => {} }) {
-  if (!product) return null;
+  if (!products) return null;
 
   const {
     id,
